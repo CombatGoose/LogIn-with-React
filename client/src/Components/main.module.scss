@@ -1,0 +1,115 @@
+.body {
+    width: 100%;
+    display: flex;
+    overflow-y: hidden;
+}
+
+.secondBlock {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textContainer {
+    margin-left: -30%;
+    h2 {
+        margin-top: -15px;
+    }
+}
+
+.logIn_menu {
+    width: 60%;
+    p {
+        color: rgb(42, 42, 42);
+    }
+    input {
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid #E8E8E8;
+    }
+}
+
+.more {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .checkbox {
+        input {
+            border: none;
+        }
+        label {
+            color: rgb(71, 71, 71);
+        }
+    }
+}
+
+.password {
+    color: rgb(0, 0, 198);
+}
+
+.btn {
+    width: 50%;
+    height: 65px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+    transition-duration: 1s;
+    width: 50%;
+    height: 65px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonLog {
+    background: #04C35C;
+    &:hover {
+        transition-duration: 1s;
+        background-color: rgb(50, 154, 50);
+    }
+}
+
+.signWithGoogle {
+    background: var(--800, #2D3748);
+    &:hover {
+        background: #242a35;
+        transition-duration: 1s;
+    }
+}
+
+@media(max-width:900px) {
+    .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .secondBlock {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .body {
+        .secondBlock {
+            width: 80%;
+            .more {
+                width: 70vw;
+                p, label {
+                    font-size: 14px;
+                }
+            }
+            button {
+                font-size: 16px;
+            }
+        }
+    }
+}
